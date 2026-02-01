@@ -1,7 +1,7 @@
 # M-Config Configuration Manager
 
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="[https://gbhackers.com/jaguar-land-rover-confirms-gradual-restart-of-operations/]" />
+<img width="1200" height="475" alt="GHBanner" src="https://gbhackers.com/jaguar-land-rover-confirms-gradual-restart-of-operations/" />
 </div>
 
 A modern Next.js-based web application for managing configuration patterns, attributes, and system settings for Jaguar Land Rover (JLR) manufacturing systems.
