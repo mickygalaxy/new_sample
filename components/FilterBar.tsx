@@ -20,9 +20,9 @@ const FilterBar: React.FC<FilterBarProps> = ({
     <div className={`p-4 border-b border-gray-200 transition-colors duration-200 ${
       isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white'
     }`}>
-      <div className="flex items-end gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-end gap-4">
         {/* Pattern Name Input */}
-        <div className="flex flex-col gap-1 w-64">
+        <div className="flex flex-col gap-1 w-full sm:w-64">
           <label className={`text-[11px] font-bold uppercase tracking-wide ${
             isDarkMode ? 'text-slate-400' : 'text-gray-400'
           }`}>
@@ -44,7 +44,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
         </div>
 
         {/* Pattern Type Dropdown */}
-        <div className="flex flex-col gap-1 w-64">
+        <div className="flex flex-col gap-1 w-full sm:w-64">
           <label className={`text-[11px] font-bold uppercase tracking-wide ${
             isDarkMode ? 'text-slate-400' : 'text-gray-400'
           }`}>
@@ -68,7 +68,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
         </div>
 
         {/* Search Button */}
-        <button className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded text-sm font-medium flex items-center gap-2 shadow-sm transition-all ml-auto">
+        <button className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded text-sm font-medium flex items-center gap-2 shadow-sm transition-all w-full sm:w-auto sm:ml-auto justify-center">
           <Search size={14} />
           SEARCH RESULT PATTERNS
         </button>

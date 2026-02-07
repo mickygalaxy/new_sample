@@ -1,4 +1,4 @@
-// File: C:\Users\ASUS\Downloads\m-config-configuration-manager\app\page.tsx
+// File: C:\Users\ASUS\Downloads\JLR\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

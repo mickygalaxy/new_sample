@@ -75,17 +75,18 @@ const PatternTable: React.FC<PatternTableProps> = ({ patternNameFilter, patternT
       isDarkMode ? 'bg-slate-900' : 'bg-slate-50'
     }`}>
       {/* Action Toolbar */}
-      <div className={`px-6 py-4 flex items-center justify-between ${
+      <div className={`px-2 sm:px-4 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 ${
         isDarkMode ? 'text-slate-200' : 'text-gray-600'
       }`}>
-        <h2 className="text-sm font-semibold">
-          Result Patterns ({filteredPatterns.length} Result Patterns Found)
-        </h2>
+        <div className="w-full sm:w-auto text-center sm:text-left">
+          <h2 className="text-sm font-semibold">Result Patterns</h2>
+          <div className="text-xs text-gray-400">({filteredPatterns.length} Result Patterns Found)</div>
+        </div>
 
-        <div className="flex items-center gap-3">
+        <div className="w-full sm:w-auto flex gap-2 flex-col sm:flex-row">
           <button 
             onClick={handleAdd}
-            className={`px-3 py-1.5 rounded text-xs font-bold flex items-center gap-2 transition-colors uppercase ${
+            className={`w-full sm:w-auto px-3 py-2 rounded text-xs font-bold flex items-center gap-2 justify-center transition-colors uppercase ${
               isDarkMode 
                 ? 'bg-slate-700 hover:bg-slate-600 text-slate-200' 
                 : 'bg-slate-800 hover:bg-slate-700 text-white'
@@ -98,7 +99,7 @@ const PatternTable: React.FC<PatternTableProps> = ({ patternNameFilter, patternT
           <button 
             onClick={handleEdit}
             disabled={selectedIds.size !== 1}
-            className={`px-3 py-1.5 rounded text-xs font-bold flex items-center gap-2 uppercase transition-colors ${
+            className={`w-full sm:w-auto px-3 py-2 rounded text-xs font-bold flex items-center gap-2 justify-center uppercase transition-colors ${
               selectedIds.size === 1
                 ? isDarkMode
                   ? 'bg-blue-700 hover:bg-blue-600 text-white'
@@ -115,7 +116,7 @@ const PatternTable: React.FC<PatternTableProps> = ({ patternNameFilter, patternT
           <button 
             onClick={handleDelete}
             disabled={selectedIds.size === 0}
-            className={`px-3 py-1.5 rounded text-xs font-bold flex items-center gap-2 uppercase transition-colors ${
+            className={`w-full sm:w-auto px-3 py-2 rounded text-xs font-bold flex items-center gap-2 justify-center uppercase transition-colors ${
               selectedIds.size > 0
                 ? isDarkMode
                   ? 'bg-red-700 hover:bg-red-600 text-white'
@@ -132,27 +133,29 @@ const PatternTable: React.FC<PatternTableProps> = ({ patternNameFilter, patternT
       </div>
 
       {/* Table Container */}
-      <div className="flex-1 px-6 pb-6 overflow-hidden flex flex-col">
+      <div className="flex-1 px-0 sm:px-6 pb-6 overflow-hidden flex flex-col">
         <div className={`border rounded-lg shadow-sm flex flex-col h-full transition-colors duration-200 ${
           isDarkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-gray-200'
         }`}>
             
             {/* Table Utility Bar (Columns) */}
-            <div className={`p-2 border-b border-gray-200 flex justify-between items-center ${
+            <div className={`p-2 border-b border-gray-200 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 ${
               isDarkMode ? 'bg-slate-700/50 border-slate-600' : 'bg-gray-50/50'
             }`}>
-               <div className="relative">
+               <div className="relative w-full sm:w-auto">
                  <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                  <input 
                     type="text" 
                     placeholder="Search all columns..." 
-                    className="pl-8 pr-4 py-1.5 text-xs border border-gray-300 rounded bg-white w-64 focus:outline-none focus:border-slate-400"
+                    className="pl-8 pr-4 py-1.5 text-xs border border-gray-300 rounded bg-white w-full sm:w-64 focus:outline-none focus:border-slate-400"
                  />
                </div>
-               <button className="flex items-center gap-1 text-xs text-gray-600 hover:text-gray-900 bg-white border border-gray-300 px-2 py-1 rounded shadow-sm">
-                 <Columns size={12} />
-                 Columns
-               </button>
+               <div className="w-full sm:w-auto flex justify-end">
+                 <button className="flex items-center gap-1 text-xs text-gray-600 hover:text-gray-900 bg-white border border-gray-300 px-2 py-1 rounded shadow-sm w-full sm:w-auto justify-center">
+                   <Columns size={12} />
+                   Columns
+                 </button>
+               </div>
             </div>
 
           {/* Table */}
