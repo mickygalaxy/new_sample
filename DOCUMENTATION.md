@@ -2,7 +2,7 @@
 
 ## 📋 Project Overview
 
-**M-Config Configuration Manager** is a modern Next.js-based web application built with TypeScript and Tailwind CSS. It provides a comprehensive interface for managing configuration patterns, attributes, and system settings for Jaguar Land Rover (JLR) manufacturing systems.
+**M-Config Configuration Manager** is a modern Next.js-based web application built with TypeScript and Tailwind CSS. It provides a comprehensive interface for managing configuration patterns, attributes, and system settings for  manufacturing systems.
 
 **Version**: 0.0.0
 **Technology Stack**:
@@ -622,7 +622,7 @@ App.tsx
 
 ## 📞 Support & Maintenance
 
-**Development Team**: Rohit Jain (rjain16@jlr.com)
+**Development Team**: Ayush Sahu
 **Technology**: Next.js 14 + React 18 + TypeScript + Tailwind CSS
 **Last Updated**: February 1, 2026
 **Status**: Development/Prototype
