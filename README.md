@@ -1,10 +1,10 @@
 # M-Config Configuration Manager
 
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://gbhackers.com/jaguar-land-rover-confirms-gradual-restart-of-operations/" />
+<img width="1200" height="475" alt="GHBanner" src="https://gbhackers.com/-confirms-gradual-restart-of-operations/" />
 </div>
 
-A modern Next.js-based web application for managing configuration patterns, attributes, and system settings for Jaguar Land Rover (JLR) manufacturing systems.
+A modern Next.js-based web application for managing configuration patterns, attributes, and system settings for AB manufacturing systems.
 
 ## 🚀 Quick Start
 
@@ -163,7 +163,7 @@ For detailed information about the codebase, architecture, and implementation:
 
 ## 📄 License
 
-This project is proprietary software for Jaguar Land Rover.
+This project is proprietary software for ABC.
 
 ## 📞 Support
 
@@ -174,9 +174,9 @@ For support and questions:
 
 ---
 
-*Built with ❤️ for Jaguar Land Rover manufacturing systems*</content>
+*Built with ❤️ for ABC manufacturing systems*</content>
 <parameter name="oldString"><div align="center">
-<img width="1200" height="475" alt="GHBanner" src=https://gbhackers.com/jaguar-land-rover-confirms-gradual-restart-of-operations/ />
+<img width="1200" height="475" alt="GHBanner" src=https://gbhackers.com/-confirms-gradual-restart-of-operations/ />
 </div>
 
 
